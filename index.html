@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finadel </title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.30/angular-ui-router.js"
+        integrity="sha512-5J08Lq3B2EfuPrNSYckUPHKYHaUhCQ4MdeObdcR0YZnr8eapZ7XMA2ejUyQYpWN+fwO48wuxsL5KDZYIVVVxvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Edu+TAS+Beginner&family=Montserrat&family=Work+Sans:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Edu+TAS+Beginner&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/13f8fb2909.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <!-- 1 -->
+    <link rel='stylesheet' id='wp-block-library-css' href='css_home/wp-block-library-css.css' type='text/css'
+        media='all' />
+    <style id='global-styles-inline-css' type='text/css'>
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+            --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+            --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+            --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+            --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+            --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+            --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+            --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+        }
+
+        @media screen and (max-width: 1400px) {
+            #img1 {
+                width: 1200px;
+                height: 1000px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            #img1 {
+                width: 900px;
+                height: 800px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            #img1 {
+                width: 700px;
+                height: 600px;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            #img1 {
+                width: 650px;
+                height: 700px;
+            }
+        }
+
+        @media screen and (max-width: 650px) {
+            #img1 {
+                width: 550px;
+                height: 700px;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            #img1 {
+                width: 450px;
+                height: 700px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #img1 {
+                width: 350px;
+                height: 700px;
+            }
+        }
+
+
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        #img1 {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+    </style>
+    <!-- 2 -->
+    <link rel='stylesheet' id='contact-form-7-css' href='./css_home/contact-from-7-css.css' type='text/css'
+        media='all' />
+    <!-- 3 -->
+    <link rel='stylesheet' id='genericons-css' href='./css_home/genericons-css.css' type='text/css' media='all' />
+    <!-- 4 -->
+    <link rel='stylesheet' id='main-style-css' href='./css_home/main-style-css.css' type='text/css' media='all' />
+    <!-- 5 -->
+    <link rel='stylesheet' id='slick-style-css' href='./css_home/slick-style-css.css' type='text/css' media='all' />
+
+    <link rel="icon" href="./favicon.png" sizes="32x32" />
+    <link rel="icon" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./favicon.png" />
+    <meta name="msapplication-TileImage" content="./favicon.png" />
+
+</head>
+
+<body ng-app="myapp"
+    class="home page-template page-template-page-accueil page-template-page-accueil-php page page-id-1174 page-home page-accueil">
+    <div ui-view>
+        <!-- Header -->
+        <header class="clear-after ">
+            <!-- <a class="logo" href="./index.html" class="home"><img class="image-dark" src="./20221217_114327_0000.png" width="100px" height="10000px"/><img
+                class="image-light" src="./20221217_114327_0000.png" /></a> -->
+        </header>
+        <!-- Nav Button -->
+        <div class="btn-menu ">
+            <div class="handler only-mobile"><svg viewBox="0 0 39 262" preserveAspectRatio="xMidYMid meet"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#ffffff"
+                        d="M40,262V234.38c0-16.06-5.35-31.81-15.47-45.54l-9.06-12.3c-20.65-28-20.62-63.16.06-91.16l8.94-12.09C34.63,59.54,40,43.76,40,27.66V0" />
+                </svg></div>
+            <div class="picto">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+                <div class="arrow"><svg viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 17.4585L2.02548 19L11 9.32932L2.12332 7.15256e-07L0.120312 1.56427L7.5268 9.34729L0 17.4585Z"
+                            fill="#023646" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- NavBar -->
+        <nav>
+            <div class="layer back clear-after">
+                <div class="float half fitheight hide-mobile"></div>
+                <div class="float half right fitheight hide-mobile"></div>
+            </div>
+            <div class="layer fore clear-after">
+                <div class="float half fitheight">
+                    <div class="middle-holder">
+                        <div class="middle">
+                            <div class="right-holder">
+                                <div class="main-menu">
+                                    <div class="menu-item ">
+                                        <div class="menu-head"><a class="t-nav-pri" href="./index.html">Home</a></div>
+                                    </div>
+                                    
+                                    <div class="menu-item ">
+                                        <div class="menu-head"><a class="t-nav-pri" >Login</a>
+                                            <div class="btn-dropdown only-mobile"><svg viewBox="0 0 15 9"
+                                                    preserveAspectRatio="xMidYMid meet"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1.13585 0L0 1.47308L7.12576 8L10.8433 4.50877L14 1.54423L12.8474 0.0875L7.11253 5.47404L1.13585 0Z"
+                                                        transform="translate(0.5 0.5)" id="Fill-1" fill="#023646"
+                                                        stroke="none" />
+                                                </svg></div>
+                                        </div>
+                                        <div class="menu-submenu">
+                                            <!-- <div class="menu-subitem "><a class="t-nav-sec" href="./Team.html">Our
+                                                Team</a>
+                                        </div> -->
+                                            <div class="menu-subitem "><a class="t-nav-sec"
+                                                    ui-sref="login">Login as B1 </a></div>
+                                            <div class="menu-subitem "><a class="t-nav-sec"
+                                                    ui-sref="login">Login as B2 </a>
+                                            </div>
+                                           
+                                            <!-- <div class="menu-subitem "><a class="t-nav-sec" href="#">About TED</a>
+                                        </div>
+                                        <div class="menu-subitem "><a class="t-nav-sec" href="#">About TEDx</a>
+                                        </div>
+                                        <div class="menu-subitem "><a class="t-nav-sec" href="#">About TEDxKIET</a>
+                                        </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="menu-item ">
+                                        <div class="menu-head"><a class="t-nav-pri" href="./index.html">AR Navigation</a></div>
+                                    </div>
+                                    <div class="menu-item ">
+                                        <div class="menu-head"><a class="t-nav-pri" href="./Team.html"
+                                                target="_blank">Admin Login</a></div>
+                                    </div>
+
+                                    <div class="menu-item ">
+                                        <div class="menu-head"><a class="t-nav-pri"
+                                                href="https://linktr.ee/hashtag_firee">Contact Us</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle circle1 hide-mobile"></div>
+            <div class="circle circle2 hide-mobile"></div>
+        </nav>
+
+
+        <section id="section-intro" class="onscroll fitscreen preload">
+            <!-- <div class="layer back">
+            <div class="rope sketch" path-speed="4" path-offset="0"><svg xmlns="http://www.w3.org/2000/svg"
+                    style="fill:none" id="svg-line1" viewBox="0 0 2.663384 1080"
+                    preserveAspectRatio="xMidYMax meet">
+                    <path style="stroke:#e62b1e;stroke-width:2.5;" id="path-line1" d="M 1.331692,540 V 1080" />
+                </svg>
+            </div>
+        </div> -->
+
+            <div class="letter">
+                <!-- <div class="letter-back sketch">
+                <svg viewBox="0 0 1100 1100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                    <path path-onseen="1" transform="" stroke="white" stroke-width="1" fill="none"
+                        d="M 50 50 L 350 50 L 550 300 L 750 50 L 1050 50 L 750 400 L 1050 800 L 750 800 L 550 500 L 350 800 L 50 800 L 350 400 L 50 50 " />
+                </svg>
+            </div> -->
+                <!-- <div class="letter-mid sketch">
+                
+                 <svg viewBox="0 0 1100 1100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" style="filter: drop-shadow(3.5px 8px 2px rgba(233, 14, 14, 0.7));">
+                    <path path-onseen="1" transform="" stroke="black" stroke-width="1"
+                        fill="#wp-duotone-magenta-yellow"
+                        d="M 50 50 L 350 50 L 550 300 L 750 50 L 1050 50 L 750 400 L 1050 800 L 750 800 L 550 500 L 350 800 L 50 800 L 350 400 L 50 50 " />
+                </svg> 
+               <div class="video">
+                    <video disablePictureInPicture="true" muted="true" loop="true" autoplay="true">
+                        <source src="./images/Background-Video.mp4" type="video/webm">
+                        <source src="./images/Background-Video.mp4" type="video/mp4">
+                    </video>
+                </div> 
+                
+
+            </div> -->
+            </div>
+            <div class="layer loading"></div>
+            <div class="img1">
+
+                <center id="color1"> <img src="logofinadel.png" alt="" srcset="" id="img1"> </center>
+            </div>
+            <a href="#" class="next-screen a-input scrollto" data-target="section-about"><span class="in"
+                    id="scroll1">Scroll</span></a>
+            <div class="pagination">
+                <div class="current" id="current1">01</div>
+                <div class="total" id="total1">07</div>
+            </div>
+        </section>
+
+
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <h1 id="mega"> <b> Mega Menu </b></h1>
+            <!-- <img src="data:image/png;base64,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" alt="" srcset="" id="megaimg2"> -->
+            <img src="https://cdn.dribbble.com/users/1344595/screenshots/14993295/media/c372f93735dbb3becc3894873d9d82aa.png?compress=1&resize=400x300" alt="" srcset="" width="50%" class="img-hover"
+                height="500px" id="megaimg">
+        </div>
+        
+
+        <div id="des2">
+
+            <div id="descrip3">
+                <center>
+                    <h1 class="orange"> Tabs </h1>
+                    <h3 class="green"> Categories </h3>
+                    <img src="Images/categories2.png" class="img-hover" alt="" srcset="" id="dropdown" width="600px"
+                        height="250px">
+                </center>
+            </div>
+            <div id="descrip4">
+                <center>
+                    <h1 class="orange"> Deals </h1>
+                    <h3 class="green"> Countdown </h3>
+                    <img src="Images/count.png" class="img-hover" alt="" srcset="" id="quick" width="600px"
+                        height="250px">
+                </center>
+            </div>
+
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <h1 class="orange" id="filter">Filter </h1>
+            <h3 class="green" id="products"> Products </h3>
+
+
+            <img src="https://i.pinimg.com/736x/82/4b/17/824b17c322b33166c214ac2b5246aea2.jpg" class="img-hover" alt="" srcset="" id="filterimg" width="80%">
+
+        </div>
+        <div id="shop">
+            <center>
+                <h1 id="mplace" class="orange"> <b> Marketplace </b> </h1>
+            </center>
+            <center>
+                <h1 id="vendor" class="green"> Multi Vendors </h1>
+            </center>
+
+            <img src="Images/1.png" alt="" srcset="" id="mplaceimg1" class="img-hover" width="300px" height="300px">
+            <img src="Images/2.png" alt="" srcset="" id="mplaceimg2" class="img-hover" width="300px" height="300px">
+            <img src="Images/3.png" alt="" srcset="" id="mplaceimg3" class="img-hover" width="300px" height="300px">
+            <img src="Images/4.png" alt="" srcset="" id="mplaceimg4" class="img-hover" width="300px" height="300px">
+
+        </div>
+        <div id="fimg" data-aos="fade-up" data-aos-duration="3000">
+            <img src="Images/f1.png" alt="" srcset="" id="f1" class="img-hover" width="240px" height="120px">
+            <img src="Images/f2.png" alt="" srcset="" id="f2" class="img-hover" width="240px" height="120px">
+            <img src="Images/f3.png" alt="" srcset="" id="f3" class="img-hover" width="240px" height="120px">
+            <img src="Images/f4.png" alt="" srcset="" id="f4" class="img-hover" width="240px" height="120px">
+            <img src="Images/f5.png" alt="" srcset="" id="f5" class="img-hover" width="240px" height="120px">
+        </div>
+        <div>
+
+            <center>
+                <h3 id="get" class="orange"> Get Started </h3>
+            </center>
+            <center>
+                <h1 class="green"> Purchase with us </h1>
+            </center>
+            <center>
+                <div id="lastb">
+                    <p id="log"> <i class="fa-solid fa-cart-shopping"></i> Purchase Now</p>
+                </div>
+            </center>
+        </div>
+        <br>
+        <br>
+        <div id="text5" data-aos="zoom-in" data-aos-duration="3000">
+
+            <center>
+                <h1> Experience Finadel on any device </h1>
+            </center>
+
+            <center>
+                <p>Finadel works on all major platforms, enabling you to work seamlessly across your <br> browser,
+                    mobile device,
+                    tablet, and computer.</p>
+            </center>
+            <center> <img
+                    src="https://kstatic.googleusercontent.com/files/540ac1df440f3a3708b6f31b7fa0c4fd7fd4471dc0614cab5482e110dee791fd6492b009e67d1bbc3467bd6ac63785f5120cb8070ab95de32830c63975290455"
+                    alt="" srcset=""> <img
+                    src="https://kstatic.googleusercontent.com/files/6e1905e140550741a844d866fa3fd7c11f4a9d6cb84081b66fe973ee7c0afd03e548ccf9cdf7d671c9d3f301e593b53bc2050a06d900daf13acb0b267d88e691"
+                    alt="" srcset=""></center>
+        </div>
+        <br>
+        <br>
+
+        <div>
+            <footer>
+                <div class="row">
+                    <div class="centered-semiwide clear-after">
+                        <div class="float col t-strong hide-mobile">
+                            <a href="index.html"><img class="image-light" src=""/></a>
+                        </div>
+                        <div class="float col t-ssmall hide-mobile">
+                            <div class="line">Finadel</div>
+                            <div class="line">Ecommerce  <br> Everything at your Doorstep </div>
+        
+                        </div>
+                        <div class="float col t-ssmall">
+                            <a class="line" href="./About.html">About Us</a>
+                            <a class="line" href="https://discord.gg/XbvFxfrR">Contact Us</a>
+                        </div>
+                        <div class="float right social-sharing white">
+                            <div class="middle-holder">
+                                <div class="middle">
+                                    <a target="_blank" href="https://twitter.com/hashtag_firee"><i
+                                            class="fab fa-twitter" style="font-size: 300% ;"></i>&nbsp;</a>
+                                    <a target="_blank" href="https://www.instagram.com/hashtag_firee/"><i class="fab fa-instagram"
+                                            style="font-size: 300% ;"></i>&nbsp;</a>
+                                    <a target="_blank" href="https://www.linkedin.com/company/skill-eliters/mycompany/"><i
+                                            class="fab fa-linkedin" style="font-size: 300% ;"></i>&nbsp;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scrolltop-container no-select">
+                            <div class="scrolltop a-small t-pcolor-1">Back to the top</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row spktr">
+                    <div class="centered-semiwide clear-after">
+                        <div class="center-holder">
+                            <div class="t-ssmall">
+                                <span class="copyright">&copy; This Finadel Website is operated by Bug Squashers <br>
+                                    <a target="_blank" href="./index.html">FINADEL</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type='text/javascript' src='./javascript/contact-form-7-js.js' id='contact-form-7-js'></script>
+
+    <script type='text/javascript' src='./javascript/jquery-js.js' id='jquery-js'></script>
+
+    <script type='text/javascript' src='./javascript/jquery-autoellipsis-js.js' id='jquery-autoellipsis-js'></script>
+
+    <script type='text/javascript' src='./javascript/slick-js.js' id='slick-js'></script>
+
+    <script type='text/javascript' src='./javascript/ms_preload-js.js' id='ms_preload-js'></script>
+
+    <script type='text/javascript' src='./javascript/ms_onscroll-js.js' id='ms_onscroll-js'></script>
+
+    <script type='text/javascript' src='./javascript/ms_rollstring-js.js' id='ms_rollstring-js'></script>
+
+    <!-- Main Theme -->
+    <script type='text/javascript' src='./javascript/functions-js.js' id='functions-js'></script>
+
+</body>
+
+</html>
